@@ -1,0 +1,76 @@
+.productListContainer {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+}
+
+#productListHeading {
+  font: 400 2.5vmax "Roboto";
+  padding: 0.5vmax;
+  color: rgb(37, 133, 45);
+  margin: 2rem;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.productListTable {
+  border: none !important;
+  margin: 1vmax;
+}
+
+.productListTable > div {
+  font: 300 1.3vmax "Roboto";
+  color: rgb(37, 133, 45);
+}
+
+.editBtn {
+  color: rgb(37, 133, 45);
+}
+
+.editBtn:hover {
+  color: rgba(37, 133, 45, 0.5) !important;
+}
+
+.deleteBtn:hover {
+  color: rgba(37, 133, 45, 0.5) !important;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 800px) {
+  #productListHeading {
+    font: 400 3vmax "Roboto";
+  }
+  .productListTable > div {
+    font: 300 2vmax "Roboto";
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #productListHeading {
+    font: 400 4vmax "Roboto";
+  }
+  .productListTable > div {
+    font: 300 2.8vmax "Roboto";
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .productListContainer {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .productListContainer {
+    width: 100vw;
+    height: 150vh;
+  }
+  #productListHeading {
+    font: 400 4.5vmax "Roboto";
+  }
+  .productListTable > div {
+    font: 300 3.2vmax "Roboto";
+  }
+}

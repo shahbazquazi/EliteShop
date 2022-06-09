@@ -1,0 +1,185 @@
+
+.accountContainer {
+   display: flex;
+   height: 100vh;
+   width: 100vw;
+   max-width: 100%;
+   position:fixed;
+   top: 10%;
+   left: 0%;
+   background-color: white;
+   overflow-y: scroll;
+}
+
+.accountContainer > div {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    color:rgb(37, 133, 45);
+    font: 600 2.2vmax "Roboto";
+    margin: 1vmax 0vmax !important;
+}
+.headingTop{
+    display: none;
+    color:rgb(37, 133, 45);
+    font: 600 2.2vmax "Roboto";
+    margin: 1vmax 0vmax !important;
+    transform: translateY(+1vmax);
+}
+
+.accountContainer > div:first-child > img {
+    width: 15vmax;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.accountContainer > div:first-child > img:hover {
+    transform: scale(1.05);
+}
+
+.accountContainer > div:first-child > a {
+   border: none;
+   font: 400 1vmax "Roboto";
+   background-color: rgba(37, 133, 45,0.1);
+   color: rgb(24, 87, 30);
+   text-align: center;
+   margin: 4vmax ;
+   padding: 0.5vmax;
+   width: 30%;
+   text-decoration: none;
+   transition: all 0.5s;
+}
+
+.accountContainer > div:first-child > a:hover {
+    background-color: rgba(37, 133, 45,0.3);
+}
+
+.accountContainer > div:last-child {
+    justify-content: space-evenly;
+    padding: 5vmax;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+
+.accountContainer > div:last-child > div > h4 {
+    color: rgb(24, 87, 30);
+    font: 400 1.2vmax "Roboto";
+
+}
+
+.accountContainer > div:last-child > div > p {
+    color: rgb(37, 133, 45);
+    font: 400 1vmax cursive;
+    margin: 0.2vmax;
+}
+
+.accountContainer > div:last-child > div:last-child {
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+}
+
+.accountContainer > div:last-child > div:last-child > a {
+   border: none;
+   text-decoration: none;
+   background-color: rgba(37, 133, 45,0.1);
+   padding: 0.5vmax;
+   text-align: center;
+   margin: 1vmax 0;
+   color: rgb(24, 87, 30);
+   font: 400 1vmax "Roboto";
+   transition: all 0.5s;
+}
+
+.accountContainer > div:last-child > div:last-child > a:hover {
+    background-color: rgba(37, 133, 45,0.3);
+}
+
+@media screen and (max-width: 1000px ) {
+    .accountContainer > div:first-child > a {
+        font-size: 1.5vmax;
+     }
+
+     .accountContainer > div:last-child > div > h4 {
+        font-size: 1.5vmax;
+    }
+
+    .accountContainer > div:last-child > div > p {
+        font-size: 1.3vmax;
+    }
+
+    .accountContainer > div:last-child > div:last-child > a {
+        font-size: 1.5vmax;
+     }
+}
+
+@media screen and (max-width: 800px ) {
+   
+    .accountContainer > div:first-child > img {
+        width: 25vmax;
+       
+    }
+    .accountContainer > div:first-child > a {
+        font-size: 1.8vmax;
+     }
+
+     .accountContainer > div:last-child > div > h4 {
+        font-size: 1.8vmax;
+    }
+
+    .accountContainer > div:last-child > div > p {
+        font-size: 1.5vmax;
+    }
+
+    .accountContainer > div:last-child > div:last-child > a {
+        font-size: 1.8vmax;
+     }
+}
+
+@media screen and (max-width: 650px ) {
+    .accountContainer {
+        flex-direction: column;
+     }
+
+     .accountContainer > div {
+        margin-top: 12%;
+    }
+
+    .heading {
+        display: none;
+    }
+    .headingtop{
+        display: block;
+    }
+    .accountContainer > div:last-child {
+        margin-top: 0%;
+        align-items: center;
+        padding-top: 2vmax;
+    }
+
+    .accountContainer > div:first-child > a {
+        font-size: 2.2vmax;
+     }
+
+     .accountContainer > div:last-child > div > h4 {
+        font-size: 2.2vmax;
+        text-align: center;
+        margin: 1vmax;
+    }
+
+    .accountContainer > div:last-child > div > p {
+        font-size: 1.8vmax;
+        text-align: center;
+    }
+
+    .accountContainer > div:last-child > div:last-child > a {
+        font-size: 2vmax;
+     }
+}

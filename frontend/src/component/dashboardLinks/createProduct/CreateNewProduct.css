@@ -1,0 +1,167 @@
+.createProductContainer {
+    width: 100%;
+    height: 130vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+}
+
+.createProductForm {
+   width: 50%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 1rem;
+   background-color: rgba(37, 133, 45,0.2);
+}
+
+.createProductForm > h1 {
+    margin: 2vmax;
+    color: rgb(37, 133, 45);
+}
+
+.createProductForm > div {
+    width: 90%;
+    margin: 0.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.createProductForm > div > input, 
+.createProductForm > div > textarea,
+.createProductForm > div > select  {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    border: 1px solid rgb(37, 133, 45);
+    border-radius: 4px;
+    font: 300 1vmax cursive;
+    outline: none;
+}
+
+.createProductForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.5vmax;
+    color: rgb(37, 133, 45);
+}
+
+.createProductBtn {
+    border: none;
+    background-color: rgb(37, 133, 45) !important;
+    color: white !important;
+    width: 90%;
+    margin-top: 0.5vmax !important;
+    font: 300 1vmax 'Roboto';
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    box-shadow: 0 2px 5px rgb(24, 87, 30);
+}
+
+.createProductFormImage {
+    width: 100%;
+    overflow: auto;
+}
+.createProductFormImage::-webkit-scrollbar {
+    height: 5px;
+}
+.createProductFormImage::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+.createProductFormImage::-webkit-scrollbar-thumb {
+    background-color: rgb(37, 133, 45);
+  }
+  
+.createProductFormImage > img{
+    width: 2vmax;
+    margin: 0.5vmax;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .createProductForm {
+        width: 60%;
+        height: 90vh;
+     }
+     .createProductForm > h1 {
+        margin: 2vmax;
+        color: rgb(37, 133, 45);
+        font-size: 2.5vmax;
+    }
+     .createProductForm > div > input, 
+     .createProductForm > div > textarea,
+     .createProductForm > div > select  {
+         font: 300 1.2vmax cursive;
+     }
+}
+
+@media screen and (max-width: 800px) {
+    .createProductForm {
+        width: 60%;
+        height: 80vh;
+     }
+     .createProductForm > h1 {
+        margin: 2vmax;
+        color: rgb(37, 133, 45);
+        font-size: 3vmax;
+    }
+     .createProductForm > div > input, 
+     .createProductForm > div > textarea,
+     .createProductForm > div > select  {
+         font: 300 1.5vmax cursive;
+     }
+     .createProductForm > div > svg {
+        font-size: 2vmax;
+    }   
+}
+
+@media screen and (max-width: 650px) {
+    .createProductContainer {
+        width: 100%;
+        height: 100vh;
+    }
+    .createProductForm {
+        width: 80%;
+        height: 80vh;
+     }
+     .createProductForm > h1 {
+        margin: 2.5vmax;
+        color: rgb(37, 133, 45);
+        font-size: 4vmax;
+    }
+     .createProductForm > div > input, 
+     .createProductForm > div > textarea,
+     .createProductForm > div > select  {
+         font: 300 2vmax cursive;
+     }
+     .createProductForm > div > svg {
+        font-size: 2.5vmax;
+    }   
+}
+
+@media screen and (max-width: 450px) {
+    .createProductForm {
+        width: 80%;
+        height: 70vh;
+     }
+     .createProductForm > h1 {
+        margin: 2.5vmax;
+        color: rgb(37, 133, 45);
+        font-size: 4.5vmax;
+    }
+     .createProductForm > div > input, 
+     .createProductForm > div > textarea,
+     .createProductForm > div > select  {
+         font: 300 2.5vmax cursive;
+     }
+     .createProductForm > div > svg {
+        font-size: 3vmax;
+    }   
+}

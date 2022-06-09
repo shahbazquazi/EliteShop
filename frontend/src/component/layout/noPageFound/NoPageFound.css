@@ -1,0 +1,43 @@
+.noPageContainer {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noPageBox {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(37, 133, 45);
+    background-color: rgba(37, 133, 45, 0.2);
+    box-shadow: 5px 5px rgba(37, 133, 45, 0.5);
+    
+}
+
+.noPageBox > svg {
+    font-size: 4rem;
+}
+
+.noPageBox > h1 {
+    font: 600 4rem "Roboto";
+}
+
+.noPageBox > p {
+    font: 400 1.5rem cursive;
+}
+
+.noPageBox > a {
+    padding: 1vmax 2vmax;
+    margin: 2vmax;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: rgb(37, 133, 45);
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding-top: 0px;
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+    cursor: url("../public/images/cursor.png"),auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}

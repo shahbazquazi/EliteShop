@@ -1,0 +1,83 @@
+footer{
+    width: 100vw;
+    height: 20vmax;
+    margin-top: 10vmax;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.leftFooter{
+    margin: 1vmax;
+    margin-left: 1vmax;
+    width: 30%; 
+}
+
+.leftFooter h4 {
+    font-family: 'Dongle';
+    font-size: 2vmax;
+    color: greenyellow;
+
+}
+.downloadbtn {
+    width: 2vmax;
+    height: 2vmax;
+    margin-right: 1vmax;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+.downloadbtn:hover{
+    color: greenyellow;
+}
+.midFooter{
+    margin: 1vmax;
+    width: 40%;
+    text-align: center;
+    font-family: 'Dongle';
+}
+.footertitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.midFooter h4{
+    font-size: 2.2vmax;
+    color: greenyellow;
+}
+.midFooter img {
+    width: 2vmax;
+    height: 2vmax;
+    margin: 0.5vmax;
+}
+.tagline{
+    margin: 0.5vmax;
+    font-size: 1.8vmax;
+}
+.copyright{
+    margin: 0.5vmax;
+    font-size: 1.6vmax;
+}
+.rightFooter{
+    margin: 1vmax;
+    width: 30%;
+    text-align: center;
+    font-family: 'Dongle';
+}
+.rightFooter h4 {
+    font-size: 2vmax;
+    margin: 0.5vmax;
+    color: greenyellow;
+}
+.socialmediabtn{
+    width: 1.5vmax;
+    height: 1.5vmax;
+    margin-right: 1vmax;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+.socialmediabtn:hover{
+    color: greenyellow;
+}

@@ -1,0 +1,102 @@
+.contactContainer {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactForm {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactForm > h1 {
+  width: 50%;
+  margin: 2vmax;
+  text-align: center;
+  color: rgb(37, 133, 45);
+}
+
+.contactForm > div {
+  width: 90%;
+  margin: 0.5vmax;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contactForm > div > input,
+.contactForm > div > textarea {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  border: 1px solid rgb(37, 133, 45);
+  border-radius: 4px;
+  font: 300 1vmax cursive;
+  outline: none;
+}
+
+.inputSvg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.5vmax;
+  color: rgb(37, 133, 45);
+}
+
+.textareaSvg {
+  position: absolute;
+  transform: translate(1vmax, -2.7vmax);
+  font-size: 1.8vmax;
+  color: rgb(37, 133, 45);
+}
+
+@media screen and (max-width: 900px) {
+  .contactForm {
+    width: 50%;
+  }
+  .contactForm > div > input,
+  .contactForm > div > textarea {
+    font: 300 1.5vmax cursive;
+  }
+  .inputSvg {
+    font-size: 1.8vmax;
+  }
+  .textareaSvg {
+    transform: translate(1vmax, -4vmax);
+    font-size: 2.1vmax;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contactForm {
+    width: 60%;
+  }
+  .contactForm > h1 {
+    margin: 4vmax;
+  }
+  .contactForm > div > input,
+  .contactForm > div > textarea {
+    font: 300 2.5vmax cursive;
+    padding: 2vmax 6vmax;
+  }
+  .inputSvg {
+    font-size: 2.8vmax;
+    transform: translateX(1.2vmax);
+  }
+  .textareaSvg {
+    transform: translate(1vmax, -6.5vmax);
+    font-size: 3.2vmax;
+  }
+}
+
+@media screen and (max-width: 450px) {
+    .contactForm {
+        width: 80%;
+      }
+      .contactForm > h1 {
+        font-size: 5vmax;
+      }
+}

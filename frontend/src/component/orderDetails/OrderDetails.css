@@ -1,0 +1,154 @@
+.greenColor {
+    color:  rgb(37, 133, 45);
+}
+
+.redColor {
+    color: red;
+}
+
+.orderDetails {
+    margin: 2vmax;
+    margin-top: 10%;
+}
+
+.orderDetailsContainer > h1 {
+    font: 600 2vmax "Roboto";
+    margin: 4vmax 0;
+    color: rgb(37, 133, 45);
+}
+
+.orderDetailsContainer > p {
+    font: 500 1.5vmax "Roboto";
+    color: rgb(37, 133, 45);
+}
+
+.orderDetailsBox, .orderItemsContainer {
+    margin: 2vmax;
+}
+
+.orderDetailsBox > div {
+     display: flex;
+     margin: 1vmax 0;
+}
+
+.orderDetailsBox > div > p {
+    font: 300 1.2vmax "Roboto"; 
+    color:rgb(37, 133, 45);
+}
+
+.orderDetailsBox > div > span {
+    margin: 0 1vmax;
+    font: 100 1.2vmax "Roboto";
+}
+
+.orderItems > p {
+    font: 500 1.5vmax "Roboto";
+    color: rgb(37, 133, 45);
+}
+
+.orderItems {
+    padding: 2vmax 5vmax;
+    border-top: 1px solid rgb(37, 133, 45);
+}
+
+.orderItemsContainer > div {
+    display: flex;
+    font: 300 1.2vmax "Roboto";
+    align-items: center;
+    margin: 2vmax 0;
+}
+
+.orderItemsContainer > div > a > img {
+    width: 3vmax;
+}
+
+.orderItemsContainer > div > a {
+    color: black;
+    margin: 0 2vmax;
+    width: 100%;
+    text-decoration: none;
+}
+
+.orderItemsContainer > div > span {
+    font: 100 1.2vmax "Roboto";
+    color: rgb(37, 133, 45);
+    width: 100%;
+}
+
+@media screen and (max-width:850px) {
+    .orderDetails {
+        margin: 2vmax;
+        margin-top: 15%;
+    }
+    .orderDetailsContainer > h1 {
+        font: 600 2.5vmax "Roboto";
+    }
+    
+    .orderDetailsContainer > p {
+        font: 500 2vmax "Roboto";
+    }
+    .orderDetailsBox > div > p {
+        font: 300 1.5vmax "Roboto"; 
+    }
+    .orderDetailsBox > div > span {
+        font: 100 1.5vmax "Roboto";
+        margin: 0 2vmax;
+    }
+    .orderItems > p {
+        font: 500 2vmax "Roboto";
+    }
+    .orderItemsContainer > div {
+        font: 300 1.5vmax "Roboto";
+    }
+    .orderItemsContainer > div > a > img {
+        width: 5vmax;
+    }
+    .orderItemsContainer > div > span {
+        font: 100 1.5vmax "Roboto";
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .orderDetails {
+        margin: 4vmax;
+        margin-top: 20%;
+    }
+    .orderDetailsContainer > h1 {
+        font: 600 3vmax "Roboto";
+        margin-bottom: 6vmax;
+    }
+    .orderDetailsBox, .orderItemsContainer {
+        margin: 3.5vmax;
+    }
+    .orderDetailsContainer > p {
+        font: 500 2.5vmax "Roboto";
+    }
+    .orderDetailsBox > div > p {
+        font: 300 2.2vmax "Roboto"; 
+    }
+    .orderDetailsBox > div > span {
+        font: 100 2.2vmax "Roboto";
+    }
+    .orderItems > p {
+        font: 500 2.5vmax "Roboto";
+        margin: 2vmax;
+    }
+    .orderItemsContainer > div {
+        font: 300 2.2vmax "Roboto";
+    }
+    .orderItemsContainer > div > a > img {
+        width: 8vmax;
+    }
+    .orderItemsContainer > div > span {
+        font: 100 2.2vmax "Roboto";
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .orderDetails {
+        margin: 4vmax;
+        margin-top: 30%;
+    }
+}

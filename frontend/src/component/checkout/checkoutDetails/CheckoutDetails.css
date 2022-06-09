@@ -1,0 +1,145 @@
+
+.checkoutContainer {
+    margin-top: -5vmax;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkoutBox {
+    width: 35vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.checkoutHeading {
+    text-align: center;
+    color:rgb(37, 133, 45);
+    margin: auto;
+    padding: 1.7vmax;
+    width: 90%;
+    font: 600 2vmax "Roboto";
+}
+
+.checkoutForm {
+    height: 90%;
+    margin: auto;
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.5s;
+}
+
+.checkoutForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.checkoutForm > div > input, .checkoutForm > div > select{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    margin: 0.5vmax;
+    width: 100%;
+    border: 1px solid rgb(37, 133, 45);
+    border-radius: 4px;
+    font: 300 1vmax cursive;
+    outline: none;
+}
+
+.checkoutForm > div > svg {
+    position: absolute;
+    font-size: 1.6vmax;
+    color: rgb(37, 133, 45);
+    transform: translateX(1vmax);
+}
+
+.checkoutBtn {
+    border: none;
+    background-color: rgba(37, 133, 45,0.2);
+    margin: 2vmax;
+    padding: 1vmax;
+    width: 100%;
+    color: rgb(37, 133, 45);
+    outline: none;
+    transition: all 0.5s;
+}
+
+.checkoutBtn:hover {
+    background-color: rgba(37, 133, 45,0.3);
+}
+
+
+@media screen and (max-width:800px) {
+    
+    .checkoutContainer {
+        margin-top: -5vmax;;
+    }
+
+    .checkoutBox {
+        width: 80vw;
+    }
+
+    .checkoutHeading {
+        font: 600 3vmax "Roboto";
+    }
+    
+    .checkoutForm{
+        padding: 2vmax;
+    }
+
+    .checkoutForm > div > input, .checkoutForm > div > select{
+        padding: 1vmax 4vmax;
+        font: 300 2vmax cursive;
+    }
+
+    .checkoutForm > div > svg {
+        font-size: 2.2vmax;
+        transform: translateX(1vmax);
+    }
+
+    .checkoutBtn {
+        padding: 2vmax;
+        font-size: 2.2vmax;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .checkoutContainer {
+        margin-top: -5vmax;;
+    }
+
+    .checkoutBox {
+        width: 80vw;
+    }
+
+    .checkoutHeading {
+        font: 600 3vmax "Roboto";
+    }
+    
+    .checkoutForm{
+        padding: 2vmax;
+        /* padding-top: 3v; */
+    }
+
+    .checkoutForm > div > input, .checkoutForm > div > select{
+        padding: 1vmax 4vmax;
+        font: 300 2vmax cursive;
+    }
+
+    .checkoutForm > div > svg {
+        font-size: 2.2vmax;
+        transform: translateX(1vmax);
+    }
+
+    .checkoutBtn {
+        padding: 2vmax;
+        font-size: 2.2vmax;
+    }
+     
+}

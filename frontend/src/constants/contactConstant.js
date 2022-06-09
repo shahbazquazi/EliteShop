@@ -1,0 +1,8 @@
+//Contact
+
+export const CONTACT_FORM_REQUEST  = "CONTACT_FORM_REQUEST"; 
+export const CONTACT_FORM_SUCCESS = "CONTACT_FORM_SUCCESS"; 
+export const CONTACT_FORM_FAIL = "CONTACT_FORM_FAIL";
+
+//Clear error
+export const CLEAR_ERRORS = "CLEAR_ERRORS";

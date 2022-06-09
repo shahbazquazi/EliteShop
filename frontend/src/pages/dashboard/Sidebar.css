@@ -1,0 +1,271 @@
+.sidebar {
+    width: 20vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+.sidebar > a:first-child {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 3rem;
+}
+
+.title {
+    color: black;
+    font: 600 1.5rem "Roboto"; 
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.sidebar > a > img {
+    width: 40%;
+    transition: all 0.5s;
+}
+
+.sidebar > a > img:hover {
+    filter: drop-shadow(0 0 10px rgb(37, 133, 45));
+}
+
+.MuiTreeItem-content {
+    padding: 0% !important;
+}
+
+.sidebar > a {
+    text-decoration: none;
+    font: 400 1.2rem "Roboto";
+    color: rgb(37, 133, 45);
+    padding: 2rem;
+    transition: all 0.5s;
+}
+
+.sidebar > a:hover {
+    color: rgb(70, 70, 70);
+}
+
+.dropDownLink {
+    color: rgb(37, 133, 45);
+    padding: 2rem;
+    margin-left: 1.3rem;
+    
+}
+
+.MuiTreeItem-root {
+    color: rgb(37, 133, 45);
+    transition: all 0.5s;
+    padding: 2rem;
+}
+
+.MuiTreeItem-root:hover {
+   color: rgb(70, 70, 70);
+   background-color: white !important;
+}
+
+.css-1g86id8-MuiTreeItem-content.Mui-selected {
+    background-color: white !important;
+}
+
+.productsLink {
+    text-decoration: none;
+}
+
+.sidebar > a > p {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.sidebar > a > p > svg {
+    margin-right: 0.5rem;
+}
+
+.css-1g86id8-MuiTreeItem-content:hover, .MuiTreeItem-content:hover {
+    background-color: white !important;
+}
+
+.MuiTreeItem-label  {
+    font: 400 1.2rem "Roboto" !important;
+}
+
+.css-1g86id8-MuiTreeItem-content, .MuiTreeItem-content {
+    margin: 0.5rem !important;
+}
+
+.svgIcon {
+    font-size: 1.6rem !important;
+}
+
+.MuiTreeItem-iconContainer {
+    width: 25px !important;
+   
+}
+
+@media screen and (min-width:1000px) and (max-width: 1200px) {
+    .sidebar > a > p {
+        margin-left: 1rem;
+    }
+    .dropDownLink {
+        margin-left: 0.4rem;
+    }
+}
+@media screen and (min-width:800px) and (max-width: 999px) {
+    .sidebar {
+        width: 25vw;
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+    } 
+    .sidebar > a > p {
+        margin-left: 0.6rem;
+    }
+    .dropDownLink {
+        margin-left: 0rem;
+    }
+    .title {
+        font: 600 1.2rem "Roboto"; 
+        margin-left: 0.5rem;
+        margin-top: 1.5rem;
+    }
+    .sidebar > a > img {
+        margin-top: 10%;
+        width: 30%;
+        transition: all 0.5s;
+    }
+
+}
+
+@media screen and (min-width:650px) and (max-width: 799px) {
+    .sidebar {
+        width: 25vw;
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+    } 
+    .sidebar > a > p {
+        margin-left: 0rem;
+    }
+    .sidebar > a {
+        font: 400 1rem "Roboto";
+    }
+    .MuiTreeItem-label  {
+        font: 400 1rem "Roboto" !important;
+    }
+    .dropDownLink {
+        margin-left: 0rem;
+    }
+    .title {
+        font: 600 1.2rem "Roboto"; 
+        margin-left: 0.5rem;
+        margin-top: 1.5rem;
+    }
+    .sidebar > a > img {
+        margin-top: 10%;
+        width: 30%;
+        transition: all 0.5s;
+    }
+    .svgIcon {
+        font-size: 1.3rem !important;
+    }
+    .MuiTreeItem-iconContainer {
+        width: 20px !important; 
+    }
+    .MuiTreeItem-root {
+        transform: translateX(-0.8rem); 
+    }
+
+}
+@media screen and (max-width:650px){
+    .sidebar {
+        width: 100vw;
+        height: 135vh;
+        display: flex;
+        flex-direction: column;
+    } 
+    .sidebar > a:first-child {
+        margin-bottom: 1rem;
+     }
+     
+    .sidebar > a > p {
+        margin-left: 0rem;
+    }
+    .sidebar > a {
+        font: 400 1.2rem "Roboto";
+    }
+    .MuiTreeItem-label  {
+        font: 400 1.2rem "Roboto" !important;
+    }
+    .dropDownLink {
+        margin-left: 0rem;
+    }
+    .title {
+        font: 600 1.3rem "Roboto"; 
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+    .sidebar > a > img {
+        margin-top: 8%;
+        width: 15%;
+        transition: all 0.5s;
+    }
+    .svgIcon {
+        font-size: 1.3rem !important;
+    }
+    .MuiTreeItem-iconContainer {
+        width: 20px !important; 
+    }
+    .MuiTreeItem-root {
+        transform: translateX(-0.8rem); 
+    }
+
+}
+
+@media screen and (max-width:450px){
+    .sidebar {
+        width: 100vw;
+        height: 125vh;
+        display: flex;
+        flex-direction: column;
+    } 
+    .sidebar > a:first-child {
+        margin-bottom: 1rem;
+     }
+     
+    .sidebar > a > p {
+        margin-left: 0rem;
+    }
+    .sidebar > a {
+        font: 400 1.1rem "Roboto";
+    }
+    .MuiTreeItem-label  {
+        font: 400 1.1rem "Roboto" !important;
+    }
+    .dropDownLink {
+        margin-left: 0rem;
+    }
+    .title {
+        font: 600 1.3rem "Roboto"; 
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+    }
+    .sidebar > a > img {
+        margin-top: 8%;
+        width: 15%;
+        transition: all 0.5s;
+    }
+    .svgIcon {
+        font-size: 1.3rem !important;
+    }
+    .MuiTreeItem-iconContainer {
+        width: 20px !important; 
+    }
+    .MuiTreeItem-root {
+        transform: translateX(-0.8rem); 
+    }
+
+}
+
+
+
+
+ 

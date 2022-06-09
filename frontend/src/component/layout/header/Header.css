@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+
+.navbar{
+    top:0%;
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 5rem 1fr 2fr 2fr 5rem;
+    position: fixed;
+    z-index: +3;
+}
+
+#logosection{
+    display: flex;
+    grid-column: 2/3;
+    align-items: center;
+
+}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 0.5rem;
+    
+}
+
+#logotitle{
+    margin: 0.5rem;
+    margin-left: 0rem;
+}
+
+#navbarlinks{
+    grid-column: 3/4;
+    
+}
+
+#links{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+.mylink{
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
+    font-family: 'Dongle';
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.mylink:hover{
+    color: greenyellow;
+}
+
+#searchsection{
+    position: relative;
+}
+
+.searchbar input{
+    border: none;
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 50%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+
+.searchbar input:focus{
+    outline: none;
+}
+
+#searchbtn{
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0.1rem;
+    position: absolute;
+    right:45%;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#searchbtn:hover{
+    color: greenyellow;
+}
+
+#cartbtn{
+    height: 1.3rem;
+    width: 1.3rem;
+    padding: 0.1rem;
+    position: absolute;
+    right:20%;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.badge {
+    color: black;
+    background-color: greenyellow;
+    font-size: 1vmax;
+    padding: 3px 6px;
+    border-radius: 100%;
+    position: absolute;
+    right: 17%;
+    top:20%;
+}
+
+#loginbtn{
+    height: 1.3rem;
+    width: 1.3rem;
+    padding: 0.1rem;
+    position: absolute;
+    right:10%;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#loggedInUser {
+    height: 1.3rem;
+    width: 1.3rem;
+    padding: 0.1rem;
+    position: absolute;
+    right:10%;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.featurebtn:hover{
+    color: greenyellow;
+}
+
+#mobile-menu{
+    position: relative;
+    grid-column: 4/5;
+}
+
+#menubtn{
+    height: 1.3rem;
+    width: 1.3rem;
+    padding: 0.1rem;
+    position: absolute;
+    right:10%;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#closebtn{
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    right: 0%;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.nav-menu{
+    background-color: black;
+    position: absolute;
+    top: 15%;
+    right: -100%;
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: +2;
+    overflow-y: scroll;
+}
+
+.nav-menu::-webkit-scrollbar {
+    width: 1vw;
+}
+
+.nav-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255,0.3);
+}
+
+.nav-menu::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+.nav-menu.active{
+    right: 0%;
+}
+
+.nav-text {
+    margin: 1.5rem;
+    font-family: 'Dongle';
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    list-style: none;
+    height: 2rem;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0rem;
+    border-radius: 0.4rem;
+}
+
+.nav-text a:hover{ 
+    color: greenyellow;
+}
+
+.nav-text span{
+   margin-left: 0.4rem;
+}
+
+.arrow {
+   position: absolute;
+   bottom: -5%;
+   right: 10%;
+   height: 1.5rem;
+   width: 1.5rem;   
+}
+
+.profileBar-close {
+    background-color: black;
+    position: absolute;
+    top: 15%;
+    right: -100%;
+    width: 20vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: +2;
+}
+
+.profileBar-active {
+    background-color: black;
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    width: 20vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    z-index: +2;
+}
+
+.profilebar-text {
+    margin: 1.5rem;
+    font-family: 'Dongle';
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    list-style: none;
+    height: 2rem;
+}
+
+.profilebar-text > a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+
+.profilebar-text > a:hover {
+    color: greenyellow;
+}
+.profilebar-text span{
+    margin-left: 0.4rem;
+ }
+
+@media screen and (min-width: 1201px){
+    #menubtn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .navbar{
+        grid-template-columns: 3rem 1fr 2fr 1fr 3rem;
+    }
+    .featurebtn{
+        display: none;
+    }
+    #mobile-menu{
+        grid-column: 4/5;
+    }
+    #navbarlinks{
+        display: none;
+    }
+    #cartbtn{
+        display: none;
+    }
+    .badge {
+        display: none;
+    }
+    #profilebtn{
+        display: none;
+    }
+    #searchsection{
+        grid-template-columns: 3/4;
+    }
+    .searchbar input{
+        width: 90%;
+    }
+    #searchbtn{
+        right: 5%
+    }
+    #menubtn{
+        right: 0%;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .navbar{
+        grid-template-columns: 2rem 1fr 2fr 1fr 2rem;
+    }
+    .searchbar input{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .navbar{
+        grid-template-columns: 1rem 1fr 2fr 1fr 1rem;
+    }
+    .searchbar input{
+        width: 90%;
+    }
+    .nav-menu{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .navbar{
+        grid-template-columns: 0.5rem 1fr 3fr 1fr 0.5rem;
+    }
+    .searchbar input{
+        width: 90%;
+    }
+    
+    
+}
+@media screen and (max-width: 450px){
+    .navbar{
+        grid-template-columns: 0.2rem 1fr 3fr 1fr 0.2rem;
+    }
+    .searchbar input{
+        width: 80%;
+    }
+    .nav-menu{
+        width: 50%;
+    }
+    
+}

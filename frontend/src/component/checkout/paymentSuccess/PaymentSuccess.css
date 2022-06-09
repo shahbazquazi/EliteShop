@@ -1,0 +1,44 @@
+.paymentSuccess {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paymentSuccess > svg {
+    font-size: 5vmax;
+    color: rgb(37, 133, 45);
+}
+
+.paymentSuccess > p {
+    font-size: 2vmax;
+    color: rgb(37, 133, 45);
+}
+
+.paymentSuccess > a {
+    background-color: rgba(37, 133, 45,0.2);
+    color: rgb(37, 133, 45);
+    margin: 2vmax;
+    text-decoration: none;
+    font: 400 1vmax "Roboto";
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .paymentSuccess > a {
+        margin: 2vmax;
+        font: 400 3vw "Roboto";
+        padding: 3vw 6vw;
+    }
+    .paymentSuccess > svg {
+        font-size: 12vw;
+    }
+    .paymentSuccess > p {
+        margin: 2vmax;
+        font-size: 5vw;
+    }
+}

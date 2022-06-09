@@ -1,0 +1,63 @@
+.aboutContainer {
+    width: 100%;
+    height: 110vh;
+    margin: auto;
+}
+
+.aboutBox {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.aboutHeading {
+    color: rgb(37, 133, 45);
+    margin: 2vmax;
+    font: 400 2.5vmax 'Roboto';
+}
+
+.aboutPara {
+    font: 300 1.5vmax cursive;
+}
+
+.complimentaryClose {
+    color: rgb(37, 133, 45);
+}
+
+@media screen and (max-width: 900px) {
+    .aboutContainer {
+        width: 100%;
+        height: 130vh;
+        margin: auto;
+    }
+    .aboutHeading {
+        margin: 2vmax;
+        font: 400 3.5vmax 'Roboto';
+    }
+    .aboutPara {
+        font: 300 2vmax cursive;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutContainer {
+        width: 100%;
+        height: 130vh;
+        margin: auto;
+    }
+    .aboutBox {
+        width: 80%;
+    }
+    
+    .aboutHeading {
+        margin: 2.5vmax;
+        font: 400 4.5vmax 'Roboto';
+    }
+    .aboutPara {
+        font: 300 3vmax cursive;
+    }
+}

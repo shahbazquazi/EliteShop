@@ -1,0 +1,33 @@
+
+.MuiStepConnector-line {
+    display: none !important;
+}
+
+.MuiStepConnector-root {
+    height: 3px;
+    background-color: rgba(37, 133, 45,0.3);
+}
+
+.MuiStepConnector-active, .MuiStepConnector-completed {
+    background-color: rgb(37, 133, 45);
+}
+
+@media screen and (max-width:900px) {
+     
+    .MuiStepper-root {
+        margin-top: 15% !important;
+    }
+}
+
+@media screen and (max-width:650px) {
+     
+    .MuiStepper-root {
+        margin-top: 20% !important;
+    }
+}
+@media screen and (max-width:450px) {
+     
+    .MuiStepper-root {
+        margin-top: 30% !important;
+    }
+}

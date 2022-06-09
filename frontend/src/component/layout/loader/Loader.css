@@ -1,0 +1,20 @@
+.loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255,0.1);
+    display: grid;
+    place-items: center;
+}
+.loading > div {
+    width: 5vmax;
+    height: 5vmax;
+    border-bottom: 5px solid greenyellow;
+    border-radius: 50%;
+    animation: loadingSign 1s linear infinite;
+}
+
+@keyframes loadingSign {
+    to {
+        transform: rotate(-360deg);
+    }
+}

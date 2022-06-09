@@ -1,0 +1,208 @@
+.mycart {
+    margin-top: 5vmax;
+    padding: 5vmax;
+}
+
+.cartHeader{
+    background-color: rgba(37, 133, 45,0.2);
+    width: 100%;
+    display: grid;
+    color: rgb(37, 133, 45);
+    margin: auto;
+    grid-template-columns: 4fr 1fr 1fr;
+    font: 300 1.2vmax "Roboto";
+}
+
+.cartHeader > p {
+    margin: 10px;
+}
+
+
+.cartHeader > p:last-child {
+    text-align: end;
+    margin-right: 2vmax;
+}
+
+.emptyCart {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(37, 133, 45);
+}
+
+.emptyCart > svg {
+   font-size: 5vmax;
+}
+
+.emptyCart > p {
+    font-size: 2vmax;
+}
+
+.emptyCart > a {
+    color: rgb(37, 133, 45);
+    text-decoration: none;
+    background-color: rgba(37, 133, 45,0.2);
+    font-size: 1vmax;
+    padding: 1vmax 3vmax;
+    border: none;
+    border-radius: 20px;
+}
+.cartContainer {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    border: 1px solid rgba(37, 133, 45,0.2);
+}
+
+.cartInput{
+    display: flex;
+    align-items: center;
+}
+
+.cartInput > button {
+    border: none;
+    color: rgb(37, 133, 45);
+    font-size: 1.2vmax;
+    padding: 0.3vmax;
+    background-color: rgba(37, 133, 45,0.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.cartInput > button:hover {
+    background-color: rgba(37, 133, 45,0.3);
+}
+
+.cartInput > input {
+    border: none;
+    width: 2vmax;
+    padding: 0.5vmax;
+    font: 400 1vmax "Roboto"; 
+    color: rgb(37, 133, 45);
+    text-align: center;
+    outline: none;
+}
+
+.cartSubTotal {
+    display: flex;
+    padding: 0.5vmax;
+    margin-right: 1.3vmax;
+    font: 300 1.2vmax cursive;
+    color: rgb(37, 133, 45);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cartTotal {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+    background-color: rgba(37, 133, 45,0.2);
+}
+
+.cartTotalBox {
+    display: flex;
+    color: rgb(37, 133, 45);
+    font: 700 1.2vmax cursive;
+    margin: 1vmax 2vmax 1vmax 4vmax;
+    justify-content: space-between;
+}
+
+.placeOrderBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.placeOrderBtn > button {
+    border: none;
+    width: 100%;
+    color: rgb(37, 133, 45);
+    font-size: 1.2vmax;
+    padding: 0.8vmax;
+    background-color: rgba(37, 133, 45,0.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.placeOrderBtn > button:hover {
+    background-color: rgba(37, 133, 45,0.3);
+}
+
+@media screen and (max-width: 800px) {
+    .mycart {
+        margin-top: 10vmax;
+    }
+    .cartHeader{
+        font: 300 1.7vmax "Roboto";
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+    .cartContainer {
+        grid-template-columns: 3fr 1fr 1fr;
+    }
+    .cartInput > input {
+        width: 3vmax;
+        font: 400 1.7vmax "Roboto"; 
+    }
+    .cartInput{
+       margin: 5px;
+    }
+    .cartInput > button {
+        padding: 0.8vmax;
+    }
+    .cartSubTotal {
+        padding: 0.5vmax;
+        font: 300 1.7vmax cursive;
+    }
+    .cartTotal {
+        display: grid;
+        grid-template-columns: 0fr 1.2fr;
+    }
+    .cartTotalBox {
+        font: 700 1.7vmax cursive;
+        margin: 1vmax 2vmax 1vmax 4vmax;
+    }
+    .placeOrderBtn > button {
+        font-size: 1.7vmax;
+        padding: 0.8vmax;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .mycart {
+        margin-top: 15vmax;
+    }
+    .cartHeader{
+        font: 300 2.5vmax "Roboto";
+    }
+    .cartInput > input {
+        width: 3vmax;
+        font: 400 2.3vmax "Roboto"; 
+    }
+    .cartInput{
+       margin: 10px;
+    }
+    .cartInput > button {
+        padding: 0.8vmax;
+        font-size: 2.5vmax !important;
+    }
+    .cartSubTotal {
+        padding: 1vmax;
+        font: 300 2.3vmax cursive;
+    }
+    .cartTotal {
+        display: grid;
+        grid-template-columns: 0fr 1.2fr;
+    }
+    .cartTotalBox {
+        font: 700 2.3vmax cursive;
+        margin: 1vmax 2vmax 1vmax 4vmax;
+    }
+    .placeOrderBtn > button {
+        font-size: 2.3vmax;
+        padding: 0.8vmax;
+    } 
+}

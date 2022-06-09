@@ -1,0 +1,218 @@
+.allProducts{
+    margin-top: 10%;
+}
+.productHeading {
+    margin: 1vmax auto;
+    width: 10vw;
+    border-bottom: 1px solid rgba(37, 133, 45, 0.7);
+    padding: 1vmax;
+    color: rgb(37, 133, 45);
+    font: 600 1.5vmax "Roboto";
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5vmax;
+    justify-content: center;
+    margin-left: 15%;
+    min-height: 50vh;
+}
+
+.pagination_section {
+     display: flex;
+     justify-content: center;
+     margin: 6vmax;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item {
+    background-color: white;
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0,0.6);
+    padding: 1vmax 1.5vmax;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.page-item:first-child {
+    border-radius: 5px 0  0 5px;
+}
+
+.page-item:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+    text-decoration: none;
+    font: 300 1vmax "Roboto";
+    color: #25852d;
+    transition: all 0.5s;
+}
+
+.page-item:hover {
+    background-color: rgba(173, 255, 47,0.3);
+}
+
+.pageItemActive {
+    background-color: rgba(173, 255, 47,0.3) ;
+}
+
+.pageLinkActive {
+    color: black;
+}
+
+.filter_section {
+    width: 10vmax;
+    position: absolute;
+    top: 15vmax;
+    left: 4vmax;
+}
+
+.filterHeading {
+    margin: 1.5vmax 0vmax;
+}
+
+.categorySection {
+    padding: 0px;
+    margin: 1vmax 0vmax;
+}
+
+.categoryLinks {
+    list-style: none;
+    color: rgba(37, 133, 45,0.7);
+    font: 400 1.1vmax "Roboto";
+    margin: 0.5vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.categoryLinks:hover {
+    color: rgb(37, 133, 45)
+}
+
+
+@media screen and (max-width: 1100px) {
+    .allProducts {
+        margin-top: 25%;
+        margin-left: 2% ;
+    }
+    .filter_section {
+        top: 25vmax;
+    }
+    .priceSection{
+        margin: 1vmax 0vmax;
+    }
+    .categorySection {
+        margin: 1vmax 0vmax;
+    }
+    .categoryLinks{
+        font:300 1.5vmax "Roboto";
+        margin: 0.5vmax 0vmax;
+    }
+    .ratingSection {
+        margin: 1vmax 0vmax;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .allProducts {
+        margin-top: 18%;
+    }
+    .filter_section {
+        top: 25vmax;
+    }
+    .priceSection{
+        margin: 1vmax 0vmax;
+    }
+    .categorySection {
+        margin: 1vmax 0vmax;
+    }
+    .categoryLinks{
+        font:300 2vmax "Roboto";
+        margin: 0.5vmax 0vmax;
+    }
+    .ratingSection {
+        margin: 1vmax 0vmax;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .allProducts {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .allProducts {
+        margin-top: 25%;
+    }
+    .page-link{
+        font: 300 1.5vmax "Roboto";
+    }
+    .priceSection{
+        margin: 1vmax 0vmax;
+    }
+    .categorySection {
+        margin: 1vmax 0vmax;
+    }
+    .categoryLinks{
+        font:300 2vmax "Roboto";
+        margin: 0.5vmax 0vmax;
+    }
+    .ratingSection {
+        margin: 1vmax 0vmax;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .allProducts {
+        margin-top: 30%;
+    }
+    .filter_section {
+        width: 6vmax;
+    }
+    .priceSection{
+        margin: 1vmax 0vmax;
+    }
+    .categorySection {
+        margin: 1vmax 0vmax;
+    }
+    .categoryLinks{
+        font:300 2vmax "Roboto";
+        margin: 0.5vmax 0vmax;
+    }
+    .ratingSection {
+        margin: 1vmax 0vmax;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .allProducts {
+        margin-top: 35%;
+    }
+    .filter_section {
+        width: 6vmax;
+    }
+    .priceSection{
+        margin: 1vmax 0vmax;
+    }
+    .categorySection {
+        margin: 1vmax 0vmax;
+    }
+    .categoryLinks{
+        font:300 2vmax "Roboto";
+        margin: 0.5vmax 0vmax;
+    }
+    .ratingSection {
+        margin: 1vmax 0vmax;
+    }
+    
+}

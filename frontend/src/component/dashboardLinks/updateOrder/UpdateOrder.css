@@ -1,0 +1,171 @@
+
+
+.confirmCheckoutDetails {
+    padding: 0vmax;
+    margin-left: 0vmax;
+}
+
+.checkoutDetailsHeading {
+    font: 400 1.8vmax "Roboto";
+    margin-bottom: 4vmax !important;
+}
+
+.orderDetailsInfo {
+    margin: 2vmax;
+}
+
+.orderDetailsInfo > div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.orderDetailsInfo > div > p {
+    font: 400 0.8rem "Roboto";
+    color: rgb(37, 133, 45);
+}
+
+.orderDetailsInfo > div > span {
+    font: 400 0.8rem "Roboto";
+    color: black;
+    margin: 0 1vmax;
+}
+
+.paymentHeading {
+    color: rgb(37, 133, 45) !important;
+}
+
+.orderStatusHeading {
+    color: rgb(37, 133, 45) !important;
+}
+
+.orderItemsHeading {
+    font: 400 1.1rem "Roboto" !important;
+}
+
+.confirmOrder {
+    width: 100%;
+    margin: 2vmax;
+}
+
+.greenColor{
+    color: rgb(57, 203, 57) !important;
+}
+
+.redColor {
+    color: red !important;
+}
+
+.confirmCartItems {
+    margin-top: 1vmax;
+    margin-left: 0vmax;
+    padding: 0vmax;
+}
+
+.empty {
+    border-left: none;
+}
+
+.createOrderForm {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgba(37, 133, 45,0.2);
+}
+
+.createOrderBtn {
+    border: none;
+    background-color: rgb(37, 133, 45) !important;
+    color: white !important;
+    width: 90%;
+    margin-top: 0.5vmax !important;
+    font: 300 1vmax 'Roboto';
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    box-shadow: 0 2px 5px rgb(24, 87, 30);
+}
+
+.createOrderForm > div {
+    width: 90%;
+    margin: 0.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.createOrderForm > div > select  {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(37, 133, 45);
+    border-radius: 4px;
+    font: 300 1vmax cursive;
+    outline: none;
+}
+
+.createOrderForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax) !important;
+    font-size: 1.5vmax;
+    color: rgb(37, 133, 45);
+}
+
+.updateOrderHeading {
+    margin: 2vmax;
+   font: 400 1.8vmax "Roboto";
+   color: rgb(37, 133, 45);
+}
+
+.createProductForm > div > select {
+    margin: 1vmax 0vmax !important;
+}
+
+@media screen and (max-width: 650px) {
+    .confirmOrder {
+        grid-template-columns: 1fr;
+    }
+    .empty{
+        height: 0px;
+    }
+    .createProductContainer {
+        height: 100vh;
+    }
+    .confirmOrder {
+        height: 88vh;
+    }
+    .createOrderForm {
+        width: 30%;
+        height: 30vh;
+        align-items: flex-start;
+        background-color: transparent;
+      }
+      .createOrderForm > div > select  {
+        font: 300 0.8rem cursive;
+    }
+    .createOrderForm > div > svg {
+        position: absolute;
+        transform: translateX(1vmax) !important;
+        font-size: 1rem;
+        color: rgb(37, 133, 45);
+    }
+      .checkoutDetailsHeading {
+        font: 400 1.2rem "Roboto"!important;
+    }
+    .updateOrderHeading {
+        font: 400 1.2rem "Roboto" !important;
+        margin: 2vmax 0vmax !important;
+    }
+    .orderStatusHeading {
+        font: 400 1.2rem "Roboto" !important;
+    }
+    
+    .createOrderBtn {
+        font: 400 0.8rem "Roboto" !important;
+    }
+      
+}

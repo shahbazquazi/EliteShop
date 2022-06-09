@@ -1,0 +1,115 @@
+.reviewListContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid black;
+}
+
+.reviewForm {
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.reviewForm > h1 {
+    color: rgb(37, 133, 45);
+    margin: 2vmax;
+    text-align: center;
+    font-size: 2.5vmax;
+}
+
+.reviewForm > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewForm > div > svg {
+    position: absolute;
+    color: rgb(37, 133, 45);
+    left: 0%;
+    font: 300 1.5vmax "Roboto";
+    transform: translateX(1vmax);
+    
+}
+
+.reviewForm > div > input {
+    width: 100%;
+    padding: 1vmax 4vmax;
+    border: 1px solid rgb(37, 133, 45);
+    outline: none;
+}
+
+.reviewBtn {
+    border: none;
+    background-color: rgb(37, 133, 45) !important;
+    color: white !important;
+    width: 100%;
+    margin-top: 0.5vmax !important;
+    font: 300 1vmax 'Roboto';
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    box-shadow: 0 2px 5px rgb(24, 87, 30);
+}
+
+.reviewBtn:hover {
+    background-color: rgba(37, 133, 45,0.2) !important;
+    color: rgb(24, 87, 30) !important;
+}
+
+.noReviewsHeading {
+    color: rgb(37, 133, 45);
+    text-align: center;
+    font-size: 2vmax;
+}
+
+.MuiDataGrid-cellContent {
+    overflow: scroll !important;
+    overflow-y: hidden !important;
+    text-overflow: unset !important;
+}
+
+.MuiDataGrid-cellContent::-webkit-scrollbar {
+    height: 8px !important;
+}
+
+.MuiDataGrid-cellContent::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}   
+
+.MuiDataGrid-cellContent::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 133, 45,0.3) !important;
+}
+
+@media screen and (max-width: 800px) {
+    .reviewForm > h1 {
+        font-size: 3vmax;
+    }
+    .reviewForm > div > svg {
+        font: 300 2vmax "Roboto";
+    }
+    .reviewForm > div > input {
+        padding: 2vmax 4vmax;
+        
+    }
+}
+@media screen and (max-width: 650px) {
+    .reviewForm > h1 {
+        font-size: 4vmax;
+    }
+    .reviewForm > div > svg {
+        font: 300 2vmax "Roboto";
+    }
+    .reviewForm > div > input {
+        padding: 2vmax 4vmax;
+        
+    }
+}
