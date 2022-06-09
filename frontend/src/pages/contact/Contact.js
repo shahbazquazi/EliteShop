@@ -46,6 +46,8 @@ function Contact() {
     setName("");
     setEmail("");
     setMessage("");
+
+    alert.success("Email sent successfully");
     
   };
 
