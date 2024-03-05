@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.1bc9f4be.css",
     "main.js": "/static/js/main.d3309244.js",
     "index.html": "/index.html",
@@ -9,5 +10,16 @@
   "entrypoints": [
     "static/css/main.1bc9f4be.css",
     "static/js/main.d3309244.js"
+=======
+    "main.css": "/static/css/main.503c11b4.css",
+    "main.js": "/static/js/main.787931cf.js",
+    "index.html": "/index.html",
+    "main.503c11b4.css.map": "/static/css/main.503c11b4.css.map",
+    "main.787931cf.js.map": "/static/js/main.787931cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.503c11b4.css",
+    "static/js/main.787931cf.js"
+>>>>>>> 2444fa5 (Initial Commit)
   ]
 }

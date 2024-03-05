@@ -71,7 +71,11 @@ function Contact() {
           <div>
             <FaEnvelope className="inputSvg"  />
             <input
+<<<<<<< HEAD
               type="text"
+=======
+              type="email"
+>>>>>>> 2444fa5 (Initial Commit)
               placeholder="Email"
               required
               value={email}
